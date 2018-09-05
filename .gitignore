@@ -1,0 +1,25 @@
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.classpath
+*.launch
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+/out/
+
+# Maven
+
+target/
