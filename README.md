@@ -9,3 +9,8 @@ Related links:
 	* [Amazon USA](https://amzn.to/2QI0D0S)
 	* [Amazon Germany](https://amzn.to/2OvsWOu)
 * visit [courses.codefx.org](http://courses.codefx.org) for online courses on Java
+
+## Creating and destroying objects
+
+* Item 1: [Consider static factory methods instead of constructors](https://www.youtube.com/watch?v=WUROOKn2OTk) -
+[examples](src/main/java/org/codefx/demo/effective_java/_01_static_factory_methods/Main.java)
