@@ -1,8 +1,12 @@
 package org.codefx.demo.effective_java._01_static_factory_methods;
 
+import org.codefx.demo.effective_java._01_static_factory_methods.not_factory_pattern.Shape;
+
 import static org.codefx.demo.effective_java._01_static_factory_methods.Point.ofXY;
 
-public class Rectangle {
+// NOTE not factory pattern:
+//   It only implements `Shape`, so the code in the package not_factory_pattern compiles
+public class Rectangle implements Shape {
 
 	protected final Point lowerLeft, upperRight;
 

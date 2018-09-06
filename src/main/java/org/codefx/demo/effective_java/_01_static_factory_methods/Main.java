@@ -6,6 +6,7 @@ package org.codefx.demo.effective_java._01_static_factory_methods;
  *  - named constructors
  *  - instance-control
  *  - type-control
+ *  - not factory pattern
  */
 
 public class Main {
