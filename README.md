@@ -14,3 +14,4 @@ Related links:
 
 * Item 1: [Consider static factory methods instead of constructors](https://www.youtube.com/watch?v=WUROOKn2OTk) -
 [examples](src/main/java/org/codefx/demo/effective_java/_01_static_factory_methods/Main.java)
+* Item 2: [Consider a builder when faced with many constructor parameters](https://www.youtube.com/watch?v=2GMp8VuxZnw)
