@@ -12,6 +12,12 @@ Related links:
 
 ## Creating and destroying objects
 
-* Item 1: [Consider static factory methods instead of constructors](https://www.youtube.com/watch?v=WUROOKn2OTk) -
-[examples](src/main/java/org/codefx/demo/effective_java/_01_static_factory_methods/Main.java)
-* Item 2: [Consider a builder when faced with many constructor parameters](https://www.youtube.com/watch?v=2GMp8VuxZnw)
+* [Item 1](https://www.youtube.com/watch?v=WUROOKn2OTk): _Consider static factory methods instead of constructors_ -
+  [examples](src/main/java/org/codefx/demo/effective_java/_01_static_factory_methods/Main.java)
+* [Item 2](https://www.youtube.com/watch?v=2GMp8VuxZnw): _Consider a builder when faced with many constructor parameters_ -
+  [examples](src/main/java/org/codefx/demo/effective_java/_02_builder_pattern/Main.java)
+* [Items 3-5](https://www.youtube.com/watch?v=kVuOveApdCk) -
+  [examples](src/main/java/org/codefx/demo/effective_java/_03_04_05_singleton_utilities_di/Main.java):
+	* _Enforce the singleton property with a private constructor or an enum type_
+	* _Enforce noninstantiability with a private constructor_
+	* _Prefer dependency injection to hardwiring resources_
