@@ -14,6 +14,7 @@ import java.util.function.Supplier;
  *  - utility classes
  *  - singletons (access, plurality, serialization, enum)
  *  - dependency injection
+ *  - facades (see package of the same name)
  */
 
 public class Main {
