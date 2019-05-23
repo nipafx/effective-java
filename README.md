@@ -1,6 +1,7 @@
 # Effective Java
 
-This project contains examples and benchmarks for my [YouTube series on _Effective Java, Third Edition_](https://www.youtube.com/playlist?list=PL_-IO8LOLuNqUzvXfRCWRRJBswKEbLhgN).
+This project contains examples, tests, and benchmarks for my [YouTube series on _Effective Java, Third Edition_](https://www.youtube.com/playlist?list=PL_-IO8LOLuNqUzvXfRCWRRJBswKEbLhgN).
+The tests can be run with `mvn test` or any IDE with JUnit 5 integration.
 To run the benchmarks:
 
 ```
@@ -29,3 +30,9 @@ Related links:
 	* _Prefer dependency injection to hardwiring resources_
 * Item 6: _Avoid creating unnecessary objects_ -
   [benchmark](src/main/java/org/codefx/demo/effective_java/_06_unnecessary_objects/StringMatches.java)
+
+## Methods
+
+* Item 50: _Make defensive copies when needed_ -
+  [example](src/main/java/org/codefx/demo/effective_java/_50_defensive_copies) and
+  [tests](src/test/java/org/codefx/demo/effective_java/_50_defensive_copies/MegacorpInvarianceTests.java)
