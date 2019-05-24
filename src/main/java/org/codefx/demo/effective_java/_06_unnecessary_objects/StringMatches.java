@@ -14,13 +14,7 @@ import org.openjdk.jmh.annotations.Warmup;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
-@Fork(value = 3)
-@Warmup(iterations = 3, time = 1, timeUnit = TimeUnit.SECONDS)
-@Measurement(iterations = 3, time = 1, timeUnit = TimeUnit.SECONDS)
-@BenchmarkMode(Mode.AverageTime)
-@OutputTimeUnit(TimeUnit.MICROSECONDS)
-@State(Scope.Thread)
-public class StringMatches {
+public class StringMatches extends ObjectCreationBenchmarks {
 
 	private static final String ROMAN_REG_EX = "^(?=.)M*(C[MD]|D?C{0,3})(X[CL]|L?X{0,3})(I[XV]|V?I{0,3})$";
 	private static final Pattern ROMAN_PATTERN = Pattern.compile(ROMAN_REG_EX);
@@ -30,6 +24,9 @@ public class StringMatches {
 
 	@Benchmark
 	public boolean recreatePatternOnEachMatch() {
+		// NOTE unnecessary object:
+		//   `matches` will compile the regex to a finite state machine,
+		//   which takes "a lot" of time
 		return numeral.matches(ROMAN_REG_EX);
 	}
 
