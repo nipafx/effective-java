@@ -1,6 +1,12 @@
 # Effective Java
 
-This project contains examples for my [YouTube series on _Effective Java, Third Edition_](https://www.youtube.com/playlist?list=PL_-IO8LOLuNqUzvXfRCWRRJBswKEbLhgN).
+This project contains examples and benchmarks for my [YouTube series on _Effective Java, Third Edition_](https://www.youtube.com/playlist?list=PL_-IO8LOLuNqUzvXfRCWRRJBswKEbLhgN).
+To run the benchmarks:
+
+```
+mvn package
+java -jar target/benchmarks.jar
+```
 
 Related links:
 
@@ -21,3 +27,5 @@ Related links:
 	* _Enforce the singleton property with a private constructor or an enum type_
 	* _Enforce noninstantiability with a private constructor_
 	* _Prefer dependency injection to hardwiring resources_
+* Item 6: _Avoid creating unnecessary objects_ -
+  [benchmark](src/main/java/org/codefx/demo/effective_java/_06_unnecessary_objects/StringMatches.java)

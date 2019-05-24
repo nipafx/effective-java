@@ -23,3 +23,4 @@ local.properties
 # Maven
 
 target/
+dependency-reduced-pom.xml
