@@ -14,7 +14,7 @@ public class UrlEquals extends ObjectCreationBenchmarks {
 
 	@Benchmark
 	public boolean urlEqual() throws MalformedURLException {
-		// NOTE unnecessary object:
+		// NOTE expensive operation:
 		//   There isn't anything unnecessary here. It's just that URL::equals
 		//   resolves the host name, which can take a while...
 		return new URL(blog).equals(new URL(youtube));
