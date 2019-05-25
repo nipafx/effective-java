@@ -14,7 +14,7 @@ public class StringSplit extends ObjectCreationBenchmarks {
 	public String[] singleColonSplit() {
 		// NOTE unnecessary object:
 		//   For a single-character, `split` employs an optimization
-		//   and does not create a reg ex pattern
+		//   and does not create a regex pattern
 		return string.split(":");
 	}
 
@@ -41,7 +41,7 @@ public class StringSplit extends ObjectCreationBenchmarks {
 	@Benchmark
 	public String[] doubleColonSplit() {
 		// NOTE unnecessary object:
-		//   Beyond a single character, `split` will create a create a reg ex pattern,
+		//   Beyond a single character, `split` will create a create a regex pattern,
 		//   which makes it rather slow
 		return string.split("::");
 	}
